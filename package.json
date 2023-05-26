@@ -8,7 +8,10 @@
     "start": "next start"
   },
   "exports": {
-    "./lib/parser": "./lib/parser.js"
+    "./lib/parser": {
+      "import": "./lib/parser.js",
+      "require": "./lib/parser.js"
+    }
   },
   "dependencies": {
     "mongodb": "^5.5.0",
